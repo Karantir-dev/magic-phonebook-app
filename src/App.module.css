@@ -1,0 +1,16 @@
+.container {
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: 'Brygada 1918', serif;
+}
+
+.loader {
+  margin: 50px 0;
+}
+
+.notification {
+  top: 4em;
+}

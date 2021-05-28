@@ -1,0 +1,12 @@
+.nav > a:not(:last-child) {
+  margin-right: 15px;
+}
+
+.link {
+  color: black;
+}
+
+.activeLink {
+  color: orange;
+  text-decoration: underline;
+}

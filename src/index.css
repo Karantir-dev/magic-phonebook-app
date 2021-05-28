@@ -1,0 +1,43 @@
+@import 'modern-normalize/modern-normalize.css';
+@import url('https://fonts.googleapis.com/css2?family=Suez+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Brygada+1918:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600&display=swap');
+
+body {
+  margin: 0;
+
+  background: linear-gradient(
+    0deg,
+    rgba(0, 121, 145, 1) 0%,
+    rgba(120, 255, 208, 1) 100%
+  );
+  background-attachment: fixed;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.backgroundImage {
+  position: fixed;
+  top: 50px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('./images/seamless-pattern.jpg');
+  opacity: 0.5;
+  z-index: -1;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+a {
+  text-decoration: none;
+}
+ul,
+ol,
+p {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}

@@ -1,0 +1,88 @@
+@import '../../variables.css';
+
+.listItem {
+  min-width: 300px;
+  max-width: 400px;
+  position: relative;
+  height: 135px;
+  padding: 5px 5px 5px 15px;
+  background-color: #fff;
+  border: 1px solid rgb(138, 138, 138);
+  border-radius: 4px;
+  font-family: 'Comfortaa', cursive, sans-serif;
+  box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.54);
+}
+
+.btn {
+  width: 90px;
+  height: 30px;
+  padding: 2px 4px;
+  margin-top: 7px;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  background-color: rgb(255, 132, 0);
+  cursor: pointer;
+  font-family: 'Brygada 1918', serif;
+  transform: scale(1);
+}
+.btn:active {
+  transform: scale(0.9);
+  background-color: rgb(255, 102, 0);
+}
+
+.editBtn {
+  background-color: var(--primary-color);
+}
+.editBtn:active {
+  background-color: var(--primary-color-active);
+}
+
+.btnsWrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.svg {
+  width: 15px;
+  height: 15px;
+  display: block;
+}
+
+.text {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  display: block;
+  padding: 3px 0;
+  text-align: start;
+  font-family: 'Comfortaa';
+}
+
+.contactName {
+  composes: text;
+  text-align: center;
+  padding: 0 15px;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.btnStar {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.starEmpty:hover {
+  fill: var(--secondary-color);
+}
+
+.icon {
+  vertical-align: bottom;
+  margin-left: 10px;
+}

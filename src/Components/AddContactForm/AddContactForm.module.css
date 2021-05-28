@@ -1,0 +1,66 @@
+@import '../../variables.css';
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: start;
+  margin: 20px auto;
+  width: 300px;
+  border: 1px solid black;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 1px 1px 6px 1px rgba(0, 0, 0, 0.76);
+}
+
+.label {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  padding: 20px 20px 10px 20px;
+  font-weight: 600;
+}
+
+.formInput {
+  height: 25px;
+  margin-top: 5px;
+  padding: 1px 1px 1px 30px;
+}
+
+.formInput:focus {
+  border: solid 2px var(--primary-color);
+  border-radius: 2px;
+  outline: none;
+}
+
+.btn {
+  margin: 20px;
+  padding: 5px;
+  width: 150px;
+  border-radius: 4px;
+  border: none;
+  background-color: var(--primary-color);
+  cursor: pointer;
+  transform: scale(1);
+}
+
+.btn:active {
+  color: #fff;
+  background-color: var(--primary-color-active);
+  outline: none;
+  border: none;
+  transform: scale(0.9);
+}
+
+.icon {
+  position: absolute;
+  top: 47px;
+  left: 15px;
+  margin: 0 0 0 10px;
+  fill: gray;
+}
+
+.formInput:focus ~ .icon {
+  fill: var(--primary-color);
+}

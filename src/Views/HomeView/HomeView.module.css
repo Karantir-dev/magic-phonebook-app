@@ -1,0 +1,35 @@
+@import '../../variables.css';
+
+.header {
+  font-family: 'Suez One', serif;
+  letter-spacing: 5px;
+  color: var(--primary-color);
+}
+
+.text {
+  padding: 20px;
+  margin: 100px 10px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.7);
+  font-size: 22px;
+  font-family: 'Comfortaa', cursive, sans-serif;
+}
+
+.link {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+.link:active {
+  color: var(--primary-color-active);
+}
+
+.linkContacts {
+  display: block;
+  margin: 30px 0;
+  padding: 20px;
+  border-radius: 5px;
+  font-size: 24px;
+  font-family: 'Suez One', serif;
+  color: var(--secondary-color);
+  background-color: rgba(255, 255, 255, 0.7);
+}

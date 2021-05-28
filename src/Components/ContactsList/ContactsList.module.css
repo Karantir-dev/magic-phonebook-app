@@ -1,0 +1,49 @@
+.list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 1.5rem;
+  column-gap: 1.5rem;
+  align-self: center;
+  padding: 40px;
+}
+@media screen and (max-width: 1560px) {
+  .list {
+    grid-template-columns: 2fr 2fr;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .list {
+    grid-template-columns: 1fr;
+    padding-right: 5px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .list {
+    padding: 5px;
+  }
+}
+
+/* Стили анимаций  */
+
+.enter {
+  transform: translateX(-60%);
+  opacity: 0;
+}
+
+.enterActive {
+  transform: translateX(0);
+  opacity: 1;
+  transition: all 250ms linear;
+}
+
+.exit {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.exitActive {
+  transform: translateX(-60%);
+  opacity: 0;
+
+  transition: all 250ms linear;
+}
